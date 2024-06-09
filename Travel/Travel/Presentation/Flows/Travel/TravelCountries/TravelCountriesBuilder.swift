@@ -8,7 +8,7 @@
 import Foundation
 
 struct TravelCountriesConfiguration {
-    
+    let appConfiguration: AppConfiguration
 }
 
 struct TravelCountriesBuilder {

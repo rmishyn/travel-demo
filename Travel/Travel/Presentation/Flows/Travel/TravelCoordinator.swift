@@ -52,7 +52,7 @@ private extension TravelCoordinator {
     
     func setTravelCountries() {
         Task {
-            let configuration = TravelCountriesConfiguration()
+            let configuration = TravelCountriesConfiguration(appConfiguration: dependenciesResolver.resolve(AppConfiguration.self)!)
             let viewController = await TravelCountriesBuilder().build(output: self, configuration: configuration)
             setToNavigationController(viewController: viewController, animated: false, completion: nil)
         }

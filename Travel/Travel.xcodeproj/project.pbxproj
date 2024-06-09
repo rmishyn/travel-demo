@@ -30,6 +30,9 @@
 		44B689512C16020F00548177 /* NameDescribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B689502C16020F00548177 /* NameDescribable.swift */; };
 		44B689552C16029500548177 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B689542C16029500548177 /* NSObject+Extension.swift */; };
 		44B689572C1602E700548177 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B689562C1602E700548177 /* Storyboard.swift */; };
+		44B689592C1619E400548177 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B689582C1619E400548177 /* User.swift */; };
+		44B6895B2C1640BB00548177 /* MKMapView+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6895A2C1640BB00548177 /* MKMapView+Styling.swift */; };
+		44B6895D2C16410800548177 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6895C2C16410800548177 /* Stylable.swift */; };
 		44D001052C14CEE600BAC846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D001042C14CEE600BAC846 /* AppDelegate.swift */; };
 		44D001072C14CEE600BAC846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D001062C14CEE600BAC846 /* SceneDelegate.swift */; };
 		44D0010C2C14CEE600BAC846 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 44D0010B2C14CEE600BAC846 /* Base */; };
@@ -81,6 +84,9 @@
 		44B689502C16020F00548177 /* NameDescribable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDescribable.swift; sourceTree = "<group>"; };
 		44B689542C16029500548177 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		44B689562C1602E700548177 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		44B689582C1619E400548177 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		44B6895A2C1640BB00548177 /* MKMapView+Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Styling.swift"; sourceTree = "<group>"; };
+		44B6895C2C16410800548177 /* Stylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
 		44D001012C14CEE600BAC846 /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D001042C14CEE600BAC846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44D001062C14CEE600BAC846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +147,8 @@
 		44B689292C15AE7000548177 /* Styling */ = {
 			isa = PBXGroup;
 			children = (
+				44B6895C2C16410800548177 /* Stylable.swift */,
+				44B6895A2C1640BB00548177 /* MKMapView+Styling.swift */,
 			);
 			path = Styling;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 		44B6892C2C15AEA700548177 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44B689582C1619E400548177 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -552,6 +561,7 @@
 				44B689342C15BAF000548177 /* AbstractCoordinator.swift in Sources */,
 				44B689552C16029500548177 /* NSObject+Extension.swift in Sources */,
 				44B6894D2C1600BE00548177 /* String+Extension.swift in Sources */,
+				44B689592C1619E400548177 /* User.swift in Sources */,
 				44B689302C15BA5500548177 /* Observable.swift in Sources */,
 				44B689262C15AE2E00548177 /* SceneDelegateService.swift in Sources */,
 				44B689202C15AE0000548177 /* AppDelegateServiceContract.swift in Sources */,
@@ -562,6 +572,7 @@
 				44B689432C15E08400548177 /* TravelCountriesBuilder.swift in Sources */,
 				44B689472C15E0A300548177 /* TravelCountriesViewModel.swift in Sources */,
 				44B6894F2C16011B00548177 /* UIViewController+Extension.swift in Sources */,
+				44B6895D2C16410800548177 /* Stylable.swift in Sources */,
 				44B689452C15E09400548177 /* TravelCountriesViewController.swift in Sources */,
 				44B689362C15BB2500548177 /* Coordinator.swift in Sources */,
 				44B689492C15F35100548177 /* AppConfiguration.swift in Sources */,
@@ -571,6 +582,7 @@
 				44D001072C14CEE600BAC846 /* SceneDelegate.swift in Sources */,
 				44B689572C1602E700548177 /* Storyboard.swift in Sources */,
 				44B689242C15AE2600548177 /* SceneDelegateServiceContract.swift in Sources */,
+				44B6895B2C1640BB00548177 /* MKMapView+Styling.swift in Sources */,
 				44B6893C2C15DFE300548177 /* SceneCoordinator.swift in Sources */,
 				44B689512C16020F00548177 /* NameDescribable.swift in Sources */,
 			);
@@ -759,9 +771,9 @@
 				INFOPLIST_FILE = Travel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -789,9 +801,9 @@
 				INFOPLIST_FILE = Travel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

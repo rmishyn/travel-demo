@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class TravelCountriesViewModel: TravelCountriesViewModelProtocol {
     
@@ -19,16 +20,19 @@ class TravelCountriesViewModel: TravelCountriesViewModelProtocol {
     // MARK: Properties
     
     private let output: TravelCountriesOutput
+    private let appConfiguration: AppConfiguration
     
     // MARK: UseCases
     
     // MARK: TravelCountriesViewModelOutput
     
+    var defaultCoordinate: CLLocationCoordinate2D { appConfiguration.defaultCoordinate }
+    
     // MARK: Lifecycle
     
     init(output: TravelCountriesOutput, configuration: TravelCountriesConfiguration) {
         self.output = output
-        
+        self.appConfiguration = configuration.appConfiguration
     }
 }
 
