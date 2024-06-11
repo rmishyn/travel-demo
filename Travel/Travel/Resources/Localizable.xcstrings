@@ -1,7 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-
+    "countries" : {
+      "extractionState" : "manual"
+    },
+    "world" : {
+      "extractionState" : "manual"
+    }
   },
   "version" : "1.0"
 }

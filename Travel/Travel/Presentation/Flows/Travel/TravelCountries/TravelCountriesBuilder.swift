@@ -9,6 +9,7 @@ import Foundation
 
 struct TravelCountriesConfiguration {
     let appConfiguration: AppConfiguration
+    let getUserUseCase: any GetUserUseCase
 }
 
 struct TravelCountriesBuilder {

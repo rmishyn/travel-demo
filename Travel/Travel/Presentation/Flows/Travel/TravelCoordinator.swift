@@ -52,7 +52,8 @@ private extension TravelCoordinator {
     
     func setTravelCountries() {
         Task {
-            let configuration = TravelCountriesConfiguration(appConfiguration: dependenciesResolver.resolve(AppConfiguration.self)!)
+            let configuration = TravelCountriesConfiguration(appConfiguration: dependenciesResolver.resolve(AppConfiguration.self)!,
+                                                             getUserUseCase: dependenciesResolver.resolve((any GetUserUseCase).self)!)
             let viewController = await TravelCountriesBuilder().build(output: self, configuration: configuration)
             setToNavigationController(viewController: viewController, animated: false, completion: nil)
         }

@@ -11,5 +11,10 @@ struct User {
     var firstName: String
     var lastName: String
     var details: String
+    var avatarUrl: URL
+    
+    var fullName: String {
+        [firstName, lastName].filter({ !$0.isEmpty }).joined(separator: " ")
+    }
 }
 

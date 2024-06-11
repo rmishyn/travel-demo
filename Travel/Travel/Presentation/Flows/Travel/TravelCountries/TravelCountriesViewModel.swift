@@ -24,15 +24,27 @@ class TravelCountriesViewModel: TravelCountriesViewModelProtocol {
     
     // MARK: UseCases
     
+    private let getUserUseCase: any GetUserUseCase
+    
     // MARK: TravelCountriesViewModelOutput
     
     var defaultCoordinate: CLLocationCoordinate2D { appConfiguration.defaultCoordinate }
+    
+    var userName: Observable<String?> = Observable(nil)
+    var userDetails: Observable<String?> = Observable(nil)
+    var userAvatarUrl: Observable<URL?> = Observable(nil)
+    var numberOfCountries: Observable<Int?> = Observable(nil)
+    var worldPercentage: Observable<Int?> = Observable(nil)
+    
+    let countriesTitle: String = "countries".localized
+    var worldTitle: String = "world".localized
     
     // MARK: Lifecycle
     
     init(output: TravelCountriesOutput, configuration: TravelCountriesConfiguration) {
         self.output = output
         self.appConfiguration = configuration.appConfiguration
+        self.getUserUseCase = configuration.getUserUseCase
     }
 }
 
@@ -41,7 +53,7 @@ class TravelCountriesViewModel: TravelCountriesViewModelProtocol {
 extension TravelCountriesViewModel {
     
     func viewDidLoad() {
-        
+        loadUserData()
     }
 }
 
@@ -49,4 +61,17 @@ extension TravelCountriesViewModel {
 
 private extension TravelCountriesViewModel {
     
+    func loadUserData() {
+        Task {
+            let response = await getUserUseCase.perform(request: GetUserUseCaseRequest())
+            switch response.result {
+            case .success(let user):
+                userName.value = user.fullName
+                userDetails.value = user.details
+                userAvatarUrl.value = user.avatarUrl
+            case .failure:
+                break
+            }
+        }
+    }
 }

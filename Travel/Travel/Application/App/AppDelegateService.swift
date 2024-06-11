@@ -33,9 +33,12 @@ private extension AppDelegateService {
     
     func setupDependencies() {
         let diContainer = Container()
-        diContainer.register(AppConfiguration.self) { _ in
-            AppConfigurationImpl()
-        }
+        diContainer.register(AppConfiguration.self) { _ in AppConfigurationImpl() }
+        
+        diContainer.register(UserInfoRepository.self) { _ in UserInfoRepositoryImpl() }
+        
+        diContainer.register((any GetUserUseCase).self) { resolver in GetUserUseCaseImpl(repository: resolver.resolve(UserInfoRepository.self)!) }
+        
         self.diContainer = diContainer
     }
 }
