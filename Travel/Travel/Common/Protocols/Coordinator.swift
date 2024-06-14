@@ -28,7 +28,7 @@ protocol Coordinator: AnyObject {
     var childCoordinators: [any Coordinator] { get set }
     
     /// Navigation controller used as start point of flow hadled by this coordinator
-    var navigationController: UINavigationController { get }
+    var navigationController: UINavigationController {get}
     
     var _pushedViewControllers: [Weak<UIViewController>] {get set}
     var pushedViewControllers: [Weak<UIViewController>] {get}

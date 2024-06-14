@@ -35,8 +35,22 @@ private extension AppDelegateService {
         let diContainer = Container()
         diContainer.register(AppConfiguration.self) { _ in AppConfigurationImpl() }
         
-        diContainer.register(UserInfoRepository.self) { _ in UserInfoRepositoryImpl() }
+        // Persistent storages
+        diContainer.register(UserInfoStorage.self) { _ in UserInfoStorageImpl() }
+        diContainer.register(CountriesStorage.self) { _ in CountriesStorageImpl() }
         
+        // Others
+        diContainer.register(CollectionContentProvidersFactory.self) { _ in CollectionContentProvidersFactoryImpl() }
+        
+        // Repositories
+        diContainer.register(UserInfoRepository.self) { resolver in
+            UserInfoRepositoryImpl(userInfoStorage: resolver.resolve(UserInfoStorage.self)!)
+        }
+        diContainer.register(CountriesRepository.self) { resolver in
+            CountriesRepositoryImpl(collectionContentProvidersFactory: resolver.resolve(CollectionContentProvidersFactory.self)!)
+        }
+        
+        // Use cases
         diContainer.register((any GetUserUseCase).self) { resolver in GetUserUseCaseImpl(repository: resolver.resolve(UserInfoRepository.self)!) }
         
         self.diContainer = diContainer

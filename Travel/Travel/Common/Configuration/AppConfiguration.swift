@@ -9,5 +9,5 @@ import Foundation
 import CoreLocation
 
 protocol AppConfiguration {
-    var defaultCoordinate: CLLocationCoordinate2D { get }
+    var defaultCoordinate: CLLocationCoordinate2D {get}
 }

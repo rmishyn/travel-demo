@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4491FD4C2C1B10D6000C85D4 /* CollectionContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD4B2C1B10D6000C85D4 /* CollectionContentProvider.swift */; };
+		4491FD4F2C1B14A5000C85D4 /* AllCountriesContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD4E2C1B14A5000C85D4 /* AllCountriesContentProvider.swift */; };
+		4491FD512C1B14B9000C85D4 /* TravelCountriesContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD502C1B14B9000C85D4 /* TravelCountriesContentProvider.swift */; };
+		4491FD542C1B1941000C85D4 /* GetAllCountriesContentProviderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD532C1B1941000C85D4 /* GetAllCountriesContentProviderUseCase.swift */; };
+		4491FD562C1B1952000C85D4 /* GetAllCountriesContentProviderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD552C1B1952000C85D4 /* GetAllCountriesContentProviderUseCaseImpl.swift */; };
+		4491FD582C1B201E000C85D4 /* CountriesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD572C1B201E000C85D4 /* CountriesRepositoryImpl.swift */; };
+		4491FD5A2C1B2352000C85D4 /* GetTravelCountriesContentProviderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD592C1B2352000C85D4 /* GetTravelCountriesContentProviderUseCase.swift */; };
+		4491FD5C2C1B235C000C85D4 /* GetTravelCountriesContentProviderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD5B2C1B235C000C85D4 /* GetTravelCountriesContentProviderUseCaseImpl.swift */; };
+		4491FD5E2C1B288F000C85D4 /* CountriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD5D2C1B288F000C85D4 /* CountriesStorage.swift */; };
+		4491FD602C1B28B0000C85D4 /* CountriesStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD5F2C1B28B0000C85D4 /* CountriesStorageImpl.swift */; };
+		4491FD632C1B38B8000C85D4 /* CollectionContentProvidersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD622C1B38B8000C85D4 /* CollectionContentProvidersFactory.swift */; };
+		4491FD662C1B38CE000C85D4 /* CollectionContentProvidersFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD652C1B38CE000C85D4 /* CollectionContentProvidersFactoryImpl.swift */; };
+		4491FD692C1B3B3F000C85D4 /* TableViewContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD682C1B3B3F000C85D4 /* TableViewContentProvider.swift */; };
+		4491FD6C2C1B3C87000C85D4 /* CollectionContentProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD6B2C1B3C87000C85D4 /* CollectionContentProviderImpl.swift */; };
+		4491FD6F2C1B3E56000C85D4 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491FD6E2C1B3E56000C85D4 /* CollectionDataSource.swift */; };
 		44B27C1F2C186917002EDD18 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C1E2C186917002EDD18 /* UserInfoRepository.swift */; };
 		44B27C212C18692E002EDD18 /* CountriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C202C18692E002EDD18 /* CountriesRepository.swift */; };
 		44B27C232C186B08002EDD18 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C222C186B08002EDD18 /* Country.swift */; };
 		44B27C252C186B56002EDD18 /* GetUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C242C186B56002EDD18 /* GetUserUseCase.swift */; };
-		44B27C272C186B77002EDD18 /* FetchAllCountriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C262C186B77002EDD18 /* FetchAllCountriesUseCase.swift */; };
-		44B27C292C186BB6002EDD18 /* FetchBeenToCountriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C282C186BB6002EDD18 /* FetchBeenToCountriesUseCase.swift */; };
-		44B27C2B2C186BD4002EDD18 /* FetchBucketListCountriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C2A2C186BD4002EDD18 /* FetchBucketListCountriesUseCase.swift */; };
 		44B27C2D2C186C2E002EDD18 /* GetUserUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C2C2C186C2E002EDD18 /* GetUserUseCaseImpl.swift */; };
-		44B27C2F2C186C3E002EDD18 /* FetchAllCountriesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C2E2C186C3E002EDD18 /* FetchAllCountriesUseCaseImpl.swift */; };
-		44B27C312C186C4A002EDD18 /* FetchBeenToCountriesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C302C186C4A002EDD18 /* FetchBeenToCountriesUseCaseImpl.swift */; };
-		44B27C332C186C57002EDD18 /* FetchBucketListCountriesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C322C186C57002EDD18 /* FetchBucketListCountriesUseCaseImpl.swift */; };
 		44B27C392C186E4C002EDD18 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C382C186E4C002EDD18 /* UseCase.swift */; };
 		44B27C3B2C1871A0002EDD18 /* UserInfoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C3A2C1871A0002EDD18 /* UserInfoRepositoryImpl.swift */; };
 		44B27C3D2C18B6E8002EDD18 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C3C2C18B6E8002EDD18 /* UIFont+Extension.swift */; };
@@ -25,6 +34,9 @@
 		44B27C412C18EA40002EDD18 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B27C402C18EA40002EDD18 /* avatar.png */; };
 		44B27C432C18ECE4002EDD18 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C422C18ECE4002EDD18 /* Data+Extension.swift */; };
 		44B27C452C18F6BB002EDD18 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C442C18F6BB002EDD18 /* Int+Extension.swift */; };
+		44B27C8A2C19B98D002EDD18 /* UserInfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C892C19B98D002EDD18 /* UserInfoStorage.swift */; };
+		44B27C8C2C19B99A002EDD18 /* UserInfoStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C8B2C19B99A002EDD18 /* UserInfoStorageImpl.swift */; };
+		44B27C8E2C19BE10002EDD18 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B27C8D2C19BE10002EDD18 /* NSError+Extension.swift */; };
 		44B6891E2C15ADD200548177 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 44B6891D2C15ADD200548177 /* Swinject */; };
 		44B689202C15AE0000548177 /* AppDelegateServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B6891F2C15AE0000548177 /* AppDelegateServiceContract.swift */; };
 		44B689222C15AE0D00548177 /* AppDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B689212C15AE0D00548177 /* AppDelegateService.swift */; };
@@ -81,17 +93,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4491FD4B2C1B10D6000C85D4 /* CollectionContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionContentProvider.swift; sourceTree = "<group>"; };
+		4491FD4E2C1B14A5000C85D4 /* AllCountriesContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountriesContentProvider.swift; sourceTree = "<group>"; };
+		4491FD502C1B14B9000C85D4 /* TravelCountriesContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCountriesContentProvider.swift; sourceTree = "<group>"; };
+		4491FD532C1B1941000C85D4 /* GetAllCountriesContentProviderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCountriesContentProviderUseCase.swift; sourceTree = "<group>"; };
+		4491FD552C1B1952000C85D4 /* GetAllCountriesContentProviderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCountriesContentProviderUseCaseImpl.swift; sourceTree = "<group>"; };
+		4491FD572C1B201E000C85D4 /* CountriesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRepositoryImpl.swift; sourceTree = "<group>"; };
+		4491FD592C1B2352000C85D4 /* GetTravelCountriesContentProviderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTravelCountriesContentProviderUseCase.swift; sourceTree = "<group>"; };
+		4491FD5B2C1B235C000C85D4 /* GetTravelCountriesContentProviderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTravelCountriesContentProviderUseCaseImpl.swift; sourceTree = "<group>"; };
+		4491FD5D2C1B288F000C85D4 /* CountriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesStorage.swift; sourceTree = "<group>"; };
+		4491FD5F2C1B28B0000C85D4 /* CountriesStorageImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesStorageImpl.swift; sourceTree = "<group>"; };
+		4491FD622C1B38B8000C85D4 /* CollectionContentProvidersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionContentProvidersFactory.swift; sourceTree = "<group>"; };
+		4491FD652C1B38CE000C85D4 /* CollectionContentProvidersFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionContentProvidersFactoryImpl.swift; sourceTree = "<group>"; };
+		4491FD682C1B3B3F000C85D4 /* TableViewContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewContentProvider.swift; sourceTree = "<group>"; };
+		4491FD6B2C1B3C87000C85D4 /* CollectionContentProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionContentProviderImpl.swift; sourceTree = "<group>"; };
+		4491FD6E2C1B3E56000C85D4 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		44B27C1E2C186917002EDD18 /* UserInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRepository.swift; sourceTree = "<group>"; };
 		44B27C202C18692E002EDD18 /* CountriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRepository.swift; sourceTree = "<group>"; };
 		44B27C222C186B08002EDD18 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		44B27C242C186B56002EDD18 /* GetUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCase.swift; sourceTree = "<group>"; };
-		44B27C262C186B77002EDD18 /* FetchAllCountriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllCountriesUseCase.swift; sourceTree = "<group>"; };
-		44B27C282C186BB6002EDD18 /* FetchBeenToCountriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBeenToCountriesUseCase.swift; sourceTree = "<group>"; };
-		44B27C2A2C186BD4002EDD18 /* FetchBucketListCountriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBucketListCountriesUseCase.swift; sourceTree = "<group>"; };
 		44B27C2C2C186C2E002EDD18 /* GetUserUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserUseCaseImpl.swift; sourceTree = "<group>"; };
-		44B27C2E2C186C3E002EDD18 /* FetchAllCountriesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllCountriesUseCaseImpl.swift; sourceTree = "<group>"; };
-		44B27C302C186C4A002EDD18 /* FetchBeenToCountriesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBeenToCountriesUseCaseImpl.swift; sourceTree = "<group>"; };
-		44B27C322C186C57002EDD18 /* FetchBucketListCountriesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBucketListCountriesUseCaseImpl.swift; sourceTree = "<group>"; };
 		44B27C382C186E4C002EDD18 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		44B27C3A2C1871A0002EDD18 /* UserInfoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRepositoryImpl.swift; sourceTree = "<group>"; };
 		44B27C3C2C18B6E8002EDD18 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -99,6 +120,9 @@
 		44B27C402C18EA40002EDD18 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		44B27C422C18ECE4002EDD18 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		44B27C442C18F6BB002EDD18 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		44B27C892C19B98D002EDD18 /* UserInfoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoStorage.swift; sourceTree = "<group>"; };
+		44B27C8B2C19B99A002EDD18 /* UserInfoStorageImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoStorageImpl.swift; sourceTree = "<group>"; };
+		44B27C8D2C19BE10002EDD18 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
 		44B6891F2C15AE0000548177 /* AppDelegateServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateServiceContract.swift; sourceTree = "<group>"; };
 		44B689212C15AE0D00548177 /* AppDelegateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateService.swift; sourceTree = "<group>"; };
 		44B689232C15AE2600548177 /* SceneDelegateServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateServiceContract.swift; sourceTree = "<group>"; };
@@ -166,6 +190,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4491FD4D2C1B141C000C85D4 /* GetAllCountries */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD532C1B1941000C85D4 /* GetAllCountriesContentProviderUseCase.swift */,
+				4491FD552C1B1952000C85D4 /* GetAllCountriesContentProviderUseCaseImpl.swift */,
+			);
+			path = GetAllCountries;
+			sourceTree = "<group>";
+		};
+		4491FD522C1B190A000C85D4 /* GetTravelCountries */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD592C1B2352000C85D4 /* GetTravelCountriesContentProviderUseCase.swift */,
+				4491FD5B2C1B235C000C85D4 /* GetTravelCountriesContentProviderUseCaseImpl.swift */,
+			);
+			path = GetTravelCountries;
+			sourceTree = "<group>";
+		};
+		4491FD612C1B380F000C85D4 /* CollectionContentProviders */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD6D2C1B3E41000C85D4 /* CollectionContentDataSource */,
+				4491FD6A2C1B3C6C000C85D4 /* CollectionContentProvider */,
+				4491FD642C1B38BF000C85D4 /* CollectionContentProvidersFactory */,
+				4491FD4E2C1B14A5000C85D4 /* AllCountriesContentProvider.swift */,
+				4491FD502C1B14B9000C85D4 /* TravelCountriesContentProvider.swift */,
+			);
+			path = CollectionContentProviders;
+			sourceTree = "<group>";
+		};
+		4491FD642C1B38BF000C85D4 /* CollectionContentProvidersFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD622C1B38B8000C85D4 /* CollectionContentProvidersFactory.swift */,
+				4491FD652C1B38CE000C85D4 /* CollectionContentProvidersFactoryImpl.swift */,
+			);
+			path = CollectionContentProvidersFactory;
+			sourceTree = "<group>";
+		};
+		4491FD672C1B3B24000C85D4 /* CollectionContentProviders */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD682C1B3B3F000C85D4 /* TableViewContentProvider.swift */,
+			);
+			path = CollectionContentProviders;
+			sourceTree = "<group>";
+		};
+		4491FD6A2C1B3C6C000C85D4 /* CollectionContentProvider */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD4B2C1B10D6000C85D4 /* CollectionContentProvider.swift */,
+				4491FD6B2C1B3C87000C85D4 /* CollectionContentProviderImpl.swift */,
+			);
+			path = CollectionContentProvider;
+			sourceTree = "<group>";
+		};
+		4491FD6D2C1B3E41000C85D4 /* CollectionContentDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD6E2C1B3E56000C85D4 /* CollectionDataSource.swift */,
+			);
+			path = CollectionContentDataSource;
+			sourceTree = "<group>";
+		};
 		44B27C342C186CE4002EDD18 /* GetUser */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,31 +263,39 @@
 			path = GetUser;
 			sourceTree = "<group>";
 		};
-		44B27C352C186CFB002EDD18 /* FetchAllCountries */ = {
+		44B27C852C19B863002EDD18 /* PersistentStorage */ = {
 			isa = PBXGroup;
 			children = (
-				44B27C262C186B77002EDD18 /* FetchAllCountriesUseCase.swift */,
-				44B27C2E2C186C3E002EDD18 /* FetchAllCountriesUseCaseImpl.swift */,
+				44B27C872C19B915002EDD18 /* CoreDataStorage */,
+				44B27C882C19B951002EDD18 /* CountriesStorage */,
+				44B27C862C19B8E2002EDD18 /* UserInfoStorage */,
 			);
-			path = FetchAllCountries;
+			path = PersistentStorage;
 			sourceTree = "<group>";
 		};
-		44B27C362C186D37002EDD18 /* FetchBeenToCountries */ = {
+		44B27C862C19B8E2002EDD18 /* UserInfoStorage */ = {
 			isa = PBXGroup;
 			children = (
-				44B27C282C186BB6002EDD18 /* FetchBeenToCountriesUseCase.swift */,
-				44B27C302C186C4A002EDD18 /* FetchBeenToCountriesUseCaseImpl.swift */,
+				44B27C892C19B98D002EDD18 /* UserInfoStorage.swift */,
+				44B27C8B2C19B99A002EDD18 /* UserInfoStorageImpl.swift */,
 			);
-			path = FetchBeenToCountries;
+			path = UserInfoStorage;
 			sourceTree = "<group>";
 		};
-		44B27C372C186D63002EDD18 /* FetchBucketListCountries */ = {
+		44B27C872C19B915002EDD18 /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
-				44B27C2A2C186BD4002EDD18 /* FetchBucketListCountriesUseCase.swift */,
-				44B27C322C186C57002EDD18 /* FetchBucketListCountriesUseCaseImpl.swift */,
 			);
-			path = FetchBucketListCountries;
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		44B27C882C19B951002EDD18 /* CountriesStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4491FD5D2C1B288F000C85D4 /* CountriesStorage.swift */,
+				4491FD5F2C1B28B0000C85D4 /* CountriesStorageImpl.swift */,
+			);
+			path = CountriesStorage;
 			sourceTree = "<group>";
 		};
 		44B689272C15AE3D00548177 /* CustomComponents */ = {
@@ -242,9 +338,8 @@
 			children = (
 				44B27C382C186E4C002EDD18 /* UseCase.swift */,
 				44B27C342C186CE4002EDD18 /* GetUser */,
-				44B27C352C186CFB002EDD18 /* FetchAllCountries */,
-				44B27C362C186D37002EDD18 /* FetchBeenToCountries */,
-				44B27C372C186D63002EDD18 /* FetchBucketListCountries */,
+				4491FD4D2C1B141C000C85D4 /* GetAllCountries */,
+				4491FD522C1B190A000C85D4 /* GetTravelCountries */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -262,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				44B27C3A2C1871A0002EDD18 /* UserInfoRepositoryImpl.swift */,
+				4491FD572C1B201E000C85D4 /* CountriesRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -380,8 +476,10 @@
 		44D001362C14D01C00BAC846 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4491FD612C1B380F000C85D4 /* CollectionContentProviders */,
 				44B6892D2C15AEB500548177 /* Repositories */,
 				44B6892E2C15AEBE00548177 /* Networking */,
+				44B27C852C19B863002EDD18 /* PersistentStorage */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -399,6 +497,7 @@
 		44D001382C14D02A00BAC846 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4491FD672C1B3B24000C85D4 /* CollectionContentProviders */,
 				44B689272C15AE3D00548177 /* CustomComponents */,
 				44B689282C15AE4900548177 /* Flows */,
 				44D001462C14D22600BAC846 /* Storyboards */,
@@ -457,6 +556,7 @@
 				44B6894C2C1600BE00548177 /* String+Extension.swift */,
 				44B27C422C18ECE4002EDD18 /* Data+Extension.swift */,
 				44B27C442C18F6BB002EDD18 /* Int+Extension.swift */,
+				44B27C8D2C19BE10002EDD18 /* NSError+Extension.swift */,
 				44B6894E2C16011B00548177 /* UIViewController+Extension.swift */,
 				44B689602C17602200548177 /* UIView+Extension.swift */,
 				44B27C3C2C18B6E8002EDD18 /* UIFont+Extension.swift */,
@@ -648,50 +748,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4491FD5A2C1B2352000C85D4 /* GetTravelCountriesContentProviderUseCase.swift in Sources */,
 				44B27C3D2C18B6E8002EDD18 /* UIFont+Extension.swift in Sources */,
+				4491FD6C2C1B3C87000C85D4 /* CollectionContentProviderImpl.swift in Sources */,
 				44B689342C15BAF000548177 /* AbstractCoordinator.swift in Sources */,
 				44B689552C16029500548177 /* NSObject+Extension.swift in Sources */,
 				44B6894D2C1600BE00548177 /* String+Extension.swift in Sources */,
 				44B689592C1619E400548177 /* User.swift in Sources */,
+				44B27C8E2C19BE10002EDD18 /* NSError+Extension.swift in Sources */,
+				4491FD582C1B201E000C85D4 /* CountriesRepositoryImpl.swift in Sources */,
+				4491FD602C1B28B0000C85D4 /* CountriesStorageImpl.swift in Sources */,
 				44B689302C15BA5500548177 /* Observable.swift in Sources */,
+				44B27C8A2C19B98D002EDD18 /* UserInfoStorage.swift in Sources */,
 				44B689262C15AE2E00548177 /* SceneDelegateService.swift in Sources */,
 				44B689202C15AE0000548177 /* AppDelegateServiceContract.swift in Sources */,
 				44B689412C15E07800548177 /* TravelCountriesContract.swift in Sources */,
 				44B689222C15AE0D00548177 /* AppDelegateService.swift in Sources */,
 				44B6894B2C15F36E00548177 /* AppConfigurationImpl.swift in Sources */,
 				44B689382C15BB4400548177 /* Closures.swift in Sources */,
+				4491FD662C1B38CE000C85D4 /* CollectionContentProvidersFactoryImpl.swift in Sources */,
 				44B689432C15E08400548177 /* TravelCountriesBuilder.swift in Sources */,
 				44B689472C15E0A300548177 /* TravelCountriesViewModel.swift in Sources */,
 				44B6894F2C16011B00548177 /* UIViewController+Extension.swift in Sources */,
-				44B27C312C186C4A002EDD18 /* FetchBeenToCountriesUseCaseImpl.swift in Sources */,
 				44B6895D2C16410800548177 /* Stylable.swift in Sources */,
+				4491FD512C1B14B9000C85D4 /* TravelCountriesContentProvider.swift in Sources */,
 				44B689452C15E09400548177 /* TravelCountriesViewController.swift in Sources */,
 				44B27C212C18692E002EDD18 /* CountriesRepository.swift in Sources */,
+				4491FD5E2C1B288F000C85D4 /* CountriesStorage.swift in Sources */,
 				44B689362C15BB2500548177 /* Coordinator.swift in Sources */,
 				44B689492C15F35100548177 /* AppConfiguration.swift in Sources */,
 				44B689322C15BAA800548177 /* Weak.swift in Sources */,
+				4491FD4C2C1B10D6000C85D4 /* CollectionContentProvider.swift in Sources */,
+				4491FD692C1B3B3F000C85D4 /* TableViewContentProvider.swift in Sources */,
+				4491FD562C1B1952000C85D4 /* GetAllCountriesContentProviderUseCaseImpl.swift in Sources */,
 				44D001052C14CEE600BAC846 /* AppDelegate.swift in Sources */,
+				4491FD4F2C1B14A5000C85D4 /* AllCountriesContentProvider.swift in Sources */,
+				44B27C8C2C19B99A002EDD18 /* UserInfoStorageImpl.swift in Sources */,
+				4491FD542C1B1941000C85D4 /* GetAllCountriesContentProviderUseCase.swift in Sources */,
 				44B6893E2C15E04B00548177 /* TravelCoordinator.swift in Sources */,
-				44B27C292C186BB6002EDD18 /* FetchBeenToCountriesUseCase.swift in Sources */,
 				44D001072C14CEE600BAC846 /* SceneDelegate.swift in Sources */,
+				4491FD632C1B38B8000C85D4 /* CollectionContentProvidersFactory.swift in Sources */,
 				44B27C392C186E4C002EDD18 /* UseCase.swift in Sources */,
 				44B27C252C186B56002EDD18 /* GetUserUseCase.swift in Sources */,
-				44B27C2F2C186C3E002EDD18 /* FetchAllCountriesUseCaseImpl.swift in Sources */,
 				44B689612C17602200548177 /* UIView+Extension.swift in Sources */,
 				44B27C452C18F6BB002EDD18 /* Int+Extension.swift in Sources */,
 				44B689572C1602E700548177 /* Storyboard.swift in Sources */,
 				44B27C1F2C186917002EDD18 /* UserInfoRepository.swift in Sources */,
+				4491FD6F2C1B3E56000C85D4 /* CollectionDataSource.swift in Sources */,
 				44B27C3F2C18B822002EDD18 /* UILabel+Styling.swift in Sources */,
 				44B689242C15AE2600548177 /* SceneDelegateServiceContract.swift in Sources */,
 				44B27C2D2C186C2E002EDD18 /* GetUserUseCaseImpl.swift in Sources */,
 				44B6895B2C1640BB00548177 /* MKMapView+Styling.swift in Sources */,
-				44B27C2B2C186BD4002EDD18 /* FetchBucketListCountriesUseCase.swift in Sources */,
-				44B27C332C186C57002EDD18 /* FetchBucketListCountriesUseCaseImpl.swift in Sources */,
 				44B6893C2C15DFE300548177 /* SceneCoordinator.swift in Sources */,
 				44B27C232C186B08002EDD18 /* Country.swift in Sources */,
-				44B27C272C186B77002EDD18 /* FetchAllCountriesUseCase.swift in Sources */,
 				44B27C432C18ECE4002EDD18 /* Data+Extension.swift in Sources */,
 				44B27C3B2C1871A0002EDD18 /* UserInfoRepositoryImpl.swift in Sources */,
+				4491FD5C2C1B235C000C85D4 /* GetTravelCountriesContentProviderUseCaseImpl.swift in Sources */,
 				44B689512C16020F00548177 /* NameDescribable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ final class GetUserUseCaseImpl: GetUserUseCase {
         self.repository = repository
     }
     
-    func perform(request: GetUserUseCaseRequest) async -> GetUserUseCaseResponse {
+    func execute(request: GetUserUseCaseRequest) async -> GetUserUseCaseResponse {
         do {
             let res = try await repository.getUserInfo()
             return GetUserUseCaseResponse(request: request, result: .success(res))

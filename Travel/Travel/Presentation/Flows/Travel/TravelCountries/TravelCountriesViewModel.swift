@@ -63,7 +63,7 @@ private extension TravelCountriesViewModel {
     
     func loadUserData() {
         Task {
-            let response = await getUserUseCase.perform(request: GetUserUseCaseRequest())
+            let response = await getUserUseCase.execute(request: GetUserUseCaseRequest())
             switch response.result {
             case .success(let user):
                 userName.value = user.fullName

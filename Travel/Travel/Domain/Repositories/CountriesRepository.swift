@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol CountriesRepository {
+//    func getAllCountriesContentProvider() async throws -> any AllCountriesContentProvider
+//    func getTravelCountriesContentProvider() async throws -> any TravelCountriesContentProvider
+}

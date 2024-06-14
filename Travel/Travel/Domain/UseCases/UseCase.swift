@@ -11,5 +11,5 @@ protocol UseCase {
     associatedtype UseCaseRequest
     associatedtype UseCaseResponse
     
-    func perform(request: UseCaseRequest) async -> UseCaseResponse
+    func execute(request: UseCaseRequest) async -> UseCaseResponse
 }
